@@ -1,0 +1,136 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: url('fondojuego.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(0, 255, 179, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    box-sizing: border-box; 
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #6c63ff;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 90%; 
+    max-width: 900px; 
+    background-color: #005a1e48;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    min-height: 400px; 
+    margin: auto;
+    box-sizing: border-box; 
+}
+
+#pregunta {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#opciones {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.opcion {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: black;
+    transition: all 0.3s ease;
+    width: 100%; 
+}
+
+.opcion:hover {
+    background-color: #dfe6ff;
+    border-color: #6c63ff;
+}
+
+.opcion.seleccionada {
+    background-color: #6c63ff;
+    color: #fff;
+    border-color: #6c63ff;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%; 
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #5048d7;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .contenedor-principal {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .opcion {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}

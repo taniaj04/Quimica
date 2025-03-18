@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Química</title>
+    <link rel="stylesheet" href="bachiller.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <header>
+            <h1>¡Juego de Química!</h1>
+        </header>
+        <main>
+            <section id="game" class="contenedor">
+                <h2 id="pregunta"></h2>
+                <div id="opciones"></div>
+                <div class="controls">
+                    <button id="btn-siguiente" onclick="siguientePregunta()">Siguiente</button>
+                    <button id="btn-reiniciar" onclick="reiniciarJuego()">Reiniciar</button>
+                    <button id="btn-salir" onclick="salir()">Salir</button>
+                </div>
+                <p id="score">Puntaje: 0</p>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
