@@ -1,9 +1,11 @@
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background: url('fondojuego.jpg') no-repeat center center fixed;
+    background: url('fondojuego.jpg') no-repeat center center;
     background-size: cover;
     margin: 0;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    overflow: auto; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +23,9 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     padding: 30px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    min-height: 100%;
+    overflow: auto;
 }
 
 header h1 {
@@ -46,8 +50,8 @@ header h1 {
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     min-height: 400px; 
-    margin: auto;
     box-sizing: border-box; 
+    overflow: auto;
 }
 
 #pregunta {
@@ -91,8 +95,10 @@ header h1 {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-    width: 100%; 
+    width: 100%;
+    flex-wrap: wrap; 
 }
+
 
 button {
     padding: 10px 20px;
@@ -118,8 +124,12 @@ button:hover {
 
 @media (max-width: 768px) {
     .contenedor-principal {
-        width: 90%;
+        width: 100%;
         padding: 20px;
+    }
+
+    .contenedor {
+        width: 95%;
     }
 
     header h1 {
